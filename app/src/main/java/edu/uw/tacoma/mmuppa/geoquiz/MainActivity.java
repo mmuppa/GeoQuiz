@@ -2,6 +2,7 @@ package edu.uw.tacoma.mmuppa.geoquiz;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.*;
 public class MainActivity extends ActionBarActivity {
 
     private Button mTrueButton, mFalseButton;
+    private static String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class MainActivity extends ActionBarActivity {
                         .show();
             }
         });
+        Log.i(TAG, "onCreate");
     }
 
 
