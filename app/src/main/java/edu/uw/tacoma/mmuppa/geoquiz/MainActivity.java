@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity
         {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "Incorrect!", Toast.LENGTH_SHORT)
+                Toast.makeText(v.getContext(), "Incorrect! Try Again!", Toast.LENGTH_SHORT)
                         .show();
             }
         });
