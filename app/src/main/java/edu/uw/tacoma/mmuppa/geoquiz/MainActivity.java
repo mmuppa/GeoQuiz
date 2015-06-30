@@ -13,13 +13,15 @@ public class MainActivity extends ActionBarActivity
 
     private Button mTrueButton, mFalseButton;
     private static String TAG = "MainActivity";
-
+    private final static String TAG = "MainActivity";
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) 
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Log.i(TAG, "From Anna");
+        
         mTrueButton = (Button) findViewById(R.id.true_button);
         mFalseButton = (Button) findViewById(R.id.false_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() 
