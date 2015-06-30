@@ -35,6 +35,9 @@ public class MainActivity extends ActionBarActivity {
             }
         });
         Log.i(TAG, "onCreate");
+
+        Log.i(TAG, "pull request from Robert!");
+
     }
 
 
