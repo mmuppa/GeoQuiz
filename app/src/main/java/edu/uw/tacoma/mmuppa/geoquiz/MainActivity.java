@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.*;
 
 public class MainActivity extends ActionBarActivity {
-
+    // a sweet new comment by dkenyon
     private Button mTrueButton, mFalseButton;
     private static String TAG = "MainActivity";
 
