@@ -8,28 +8,33 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity 
+{
 
     private Button mTrueButton, mFalseButton;
     private static String TAG = "MainActivity";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) 
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         mTrueButton = (Button) findViewById(R.id.true_button);
         mFalseButton = (Button) findViewById(R.id.false_button);
-        mTrueButton.setOnClickListener(new View.OnClickListener() {
+        mTrueButton.setOnClickListener(new View.OnClickListener() 
+        {
             @Override
             public void onClick(View v) {
                 Toast.makeText(v.getContext(), "Incorrect!", Toast.LENGTH_SHORT)
                         .show();
             }
         });
-        mFalseButton.setOnClickListener(new View.OnClickListener() {
+        mFalseButton.setOnClickListener(new View.OnClickListener() 
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) 
+            {
                 Toast.makeText(v.getContext(), "Correct! Istanbul is the largest city in Turkey!", Toast.LENGTH_SHORT)
                         .show();
             }
@@ -42,21 +47,24 @@ public class MainActivity extends ActionBarActivity {
 
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) 
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) 
+    {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_settings) 
+        {
             return true;
         }
 
