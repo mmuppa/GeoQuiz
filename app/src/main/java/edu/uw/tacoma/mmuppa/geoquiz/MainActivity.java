@@ -13,7 +13,7 @@ public class MainActivity extends ActionBarActivity
 
     private Button mTrueButton, mFalseButton;
     private static String TAG = "MainActivity";
-
+    //Do you see dead people!!!!!
     @Override
     protected void onCreate(Bundle savedInstanceState) 
     {
